@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import Proyectos
+from .models import Proyectos, redes
 
 # Create your views here.
 
@@ -19,3 +19,7 @@ def sobre_mi(request):
 
 def contacto(request):
     return render(request, 'contacto.html')
+
+def redes(request):
+    red = redes.objects.all()
+    return render(request, 'redes.html', {'red':red})
