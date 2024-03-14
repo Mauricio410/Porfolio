@@ -15,7 +15,7 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import include, path
 from django.conf.urls.static import static
 from django.conf import settings
 from porfolio_personal import views
@@ -27,6 +27,7 @@ urlpatterns = [
     path('blog/', views.blog, name='blog'),
     path('sobre_mi/', views.sobre_mi, name='sobre_mi'),
     path('contacto/', views.contacto, name='contacto'),
+    path("__reload__/", include("django_browser_reload.urls")),
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
