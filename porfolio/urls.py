@@ -23,6 +23,10 @@ from porfolio_personal import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home, name='home'),
+    path('proyectos/', views.proyectos, name='proyectos'),
+    path('blog/', views.blog, name='blog'),
+    path('sobre_mi/', views.sobre_mi, name='sobre_mi'),
+    path('contacto/', views.contacto, name='contacto'),
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

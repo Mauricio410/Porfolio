@@ -6,46 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Porfolio</title>
     <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <style>
+        footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: ;
+            color: black;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <header>
         <nav>
-            <img src="{% static 'img/logo.png' %}" alt="logo" id="logo">
+            <img src="{% static 'img/logo.png' %}" alt="logo" id="logo" href="index.html">
             <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Proyectos</a></li>
-                <li><a href="#">Sobre Mi</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="{% url 'proyectos' %}">Proyectos</a></li>
+                <li><a href="{% url 'blog' %}">Blogs</a></li>
+                <li><a href="{% url 'sobre_mi' %}">Sobre Mi</a></li>
+                <li><a href="{% url 'contacto' %}">Contacto</a></li>
             </ul>
         </nav>
     </header>
     <section class="hero">
         <div class="contenedor-hero">
-            <h1>Bienvenido a mi portafolio</h1>
-            <p>Soy un desarrollador web, con mas de 5 años de experiencia en el mercado,
-            especializado en el desarrollo de aplicaciones webFullStack utilizando las
-            tecnologías más recientes, con un enfoque en la velocidad y la escalabilidad.</p>
+            <h1>Bienvenido a mi Porfolio</h1>
+            <p>Soy un desarrollador especializado en Python, con conocimientos en el desarrollo web, aplicaciones web, diseños de usuarios, entre otros.
+                Mi objetivo es brindar soluciones a mis clientes de la mejor manera posible. ¡Gracias por visitar mi Porfolio!
+            </p>
         </div>
     </section>
-    <section class="proyectos">
-        <h2>Algunos de mis proyectos</h2>
-        <div class="contenedor-proyectos">
-            <div class="proyecto">
-                <img src="{% static 'img/proyecto1.jpg' %}" alt="proyecto1">
-                {% for proyecto in proyecto %}
-                <div class="contenido-proyecto">
-                    <h3>{{proyecto.nombre}}</h3>
-                    <p>{{proyecto.descripcion}}</p>
-                    <img src="{{proyecto.imagen.url}}" width="150" height="150" style="object-fit:cover;">
-                    <br>
-                    <a href="{{proyecto.url}}">Ver Proyecto</a>
-                </div>
-                {% endfor %}
-            </div>
-        </div>
-    </section>
-    <footer style="display: flex; justify-content: center;">
-        <p style="margin: auto;">© 2024 Porfolio - Todos los derechos reservados</p>
+    <footer>
+        <p>© 2024 Porfolio - Todos los derechos reservados</p>
     </footer>
 </body>
 </html>
+
