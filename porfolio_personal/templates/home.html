@@ -27,9 +27,10 @@
                 <li class="sidebar-brand"><a href="#page-top">¡Bienvenido!</a></li>
                 <li class="sidebar-nav-item"><a href="#page-top">Inicio</a></li>
                 <li class="sidebar-nav-item"><a href="#about">Sobre mi</a></li>
-                <li class="sidebar-nav-item"><a href="#services">Servicios</a></li>
+                <li class="sidebar-nav-item"><a href="#experiencia">Experiencias</a></li>
                 <li class="sidebar-nav-item"><a href="#portfolio">Porfolio</a></li>
-                <li class="sidebar-nav-item"><a href="#contact">Contacto</a></li>
+                <li class="sidebar-nav-item"><a href="#tecnologias">Tecnologias</a></li>
+                <li class="sidebar-nav-item"><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
         <!-- Header-->
@@ -37,7 +38,19 @@
             <div class="container px-4 px-lg-5 text-center">
                 <h1 class="mb-2">¡Bienvenidos a mi Mundo!</h1>
                 <h2 class="mb-5" style="font-size:36px"><em>Mauricio Jesus Romero Zoppi</em></h2>
-                <a class="btn btn-primary btn-xl" href="#about">Conoceme</a>
+                {% comment %} <a class="btn btn-primary btn-xl" href="#about">Conoceme</a> {% endcomment %}
+                <a style="--clr: #7808d0" class="button" href="#about">
+                  <span class="button__icon-wrapper">
+                      <svg width="10" class="button__icon-svg" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 15">
+                          <path fill="currentColor" d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"></path>
+                      </svg>
+                      
+                      <svg class="button__icon-svg  button__icon-svg--copy" xmlns="http://www.w3.org/2000/svg" width="10" fill="none" viewBox="0 0 14 15">
+                          <path fill="currentColor" d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"></path>
+                      </svg>
+                  </span>
+                  Conoceme
+              </a>
             </div>
         </header>
         <!-- About-->
@@ -57,7 +70,7 @@
             </div>
         </section>
         <!-- Services-->
-        <section class="content-section bg-primary text-white text-center" id="services">
+        <section class="content-section bg-primary text-white text-center" id="contact">
             <div class="container px-4 px-lg-5">
                 <div class="content-section-heading">
                     <h3 class="text-secondary mb-0">Services</h3>
@@ -91,26 +104,17 @@
                 </div>
             </div>
         </section>
-        <!-- Callout-->
-        <section class="callout">
+
+<!-- CV -->
+        <section class="callout" id="experiencia">
             <div class="container px-4 px-lg-5 text-center">
                 <h2 class="mx-auto mb-5">
-                    Este es mi <em>CV</em>, se encuentran mis
+                    Este es mi <em>CV</em>, en él se encuentran mis
                     <em>experiencias</em>
-                    laborales y academicas
-                </h2>
-                {% comment %} <a class="btn btn-primary btn-xl" href="{% static '\assets\img\Mauricio Jesus romero zoppi - CV.pdf' %}">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-file-cv" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#253341" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M14 3v4a1 1 0 0 0 1 1h4" />
-                    <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" />
-                    <path d="M11 12.5a1.5 1.5 0 0 0 -3 0v3a1.5 1.5 0 0 0 3 0" />
-                    <path d="M13 11l1.5 6l1.5 -6" />
-                  </svg></a> {% endcomment %}
-
-                  
-                  <a href="{% static '\assets\img\Mauricio Jesus romero zoppi - CV.pdf' %}" class="download-button">
-                  <button class="download-button" href="{% static '\assets\img\Mauricio Jesus romero zoppi - CV.pdf' %}">
+                    laborales y académicas
+                </h2>                  
+                  <a href="{% static '\assets\img\Mauricio Jesus romero zoppi - CV.pdf' %}" target="_blank" class="download-button">
+                  <button class="download-button" onclick="window.open('{% static '\assets\img\Mauricio Jesus romero zoppi - CV.pdf' %}', '_blank')">
                     <div class="docs"><svg class="css-i6dzq1" stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-width="2" stroke="currentColor" height="20" width="20" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line y2="13" x2="8" y1="13" x1="16"></line><line y2="17" x2="8" y1="17" x1="16"></line><polyline points="10 9 9 9 8 9"></polyline>
                     </svg>CV</div>
                     <div class="download">
@@ -120,11 +124,12 @@
                   </a>
             </div>
         </section>
-        <!-- Portfolio-->
+        
+<!-- Portfolio-->
         <section class="content-section" id="portfolio">
             <div class="container px-4 px-lg-5">
                 <div class="content-section-heading text-center">
-                    <h3 class="text-secondary mb-0">Mi Porfolio</h3>
+                    <h2 class="text-secondary mb-0">Mi Porfolio</h2>
                     <h2 class="mb-5">Algunos de mis proyectos!</h2>
                 </div>
                 <div class="row gx-0">
@@ -175,55 +180,81 @@
                 </div>
             </div>
         </section>
-        <!-- Call to Action-->
-        <section class="content-section bg-primary text-white" id="contact">
+
+<!-- Tecnologias y Herramientas -->
+        <section class="content-section bg-primary text-white" id="tecnologias">
             <div class="container px-4 px-lg-5 text-center">
-                <h2 class="mb-4">The buttons below are impossible to resist...</h2>
-                <a class="btn btn-xl btn-light me-4" href="#!">Click Me!</a>
-                <a class="btn btn-xl btn-dark" href="#!">Look at Me!</a>
-            </div>
+                <h2 style="font-size:300%" class="mb-4">Tecnologias y herramientas</h2>
+                <p align="center"> 
+
+                <br>
+
+                <div style="display:flex; flex-direction:row; justify-content:center; align-items:center; gap:30px; width:100%">
+                <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer" onmouseover="this.title=this.firstElementChild.alt"> <img src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg" alt="HTML5" width="60" height="60"/> </a> 
+                <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer" onmouseover="this.title=this.firstElementChild.alt" onmouseout="this.title=''"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="CSS3" width="60" height="60"/> </a> 
+                <a href="https://getbootstrap.com" target="_blank" rel="noreferrer" onmouseover="this.title=this.firstElementChild.alt" onmouseout="this.title=''"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="Bootstrap" width="60" height="60"/> </a> 
+                <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer" onmouseover="this.title=this.firstElementChild.alt" onmouseout="this.title=''"> <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="Tailwind CSS" width="60" height="60"/> </a> 
+                <a href="https://git-scm.com/" target="_blank" rel="noreferrer" onmouseover="this.title=this.firstElementChild.alt" onmouseout="this.title=''"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="Git" width="60" height="60"/> </a> 
+                </div>
+
+                <br>
+
+                <div style="display:flex; flex-direction:row; justify-content:center; align-items:center; gap:30px; width:100%">
+                <a href="https://www.sqlite.org/" target="_blank" rel="noreferrer" onmouseover="this.title=this.firstElementChild.alt"> <img src="https://www.vectorlogo.zone/logos/sqlite/sqlite-icon.svg" alt="sqlite" width="60" height="60"/> </a> 
+                <a href="https://www.mysql.com/" target="_blank" rel="noreferrer" onmouseover="this.title=this.firstElementChild.alt"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="60" height="60"/> </a> 
+                <a href="https://www.postgresql.org" target="_blank" rel="noreferrer" onmouseover="this.title=this.firstElementChild.alt"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="60" height="60"/> </a> 
+                <a href="https://www.microsoft.com/en-us/sql-server" target="_blank" rel="noreferrer" onmouseover="this.title=this.firstElementChild.alt"> <img src="https://www.svgrepo.com/show/303229/microsoft-sql-server-logo.svg" alt="mssql" width="60" height="60"/> </a> 
+                {% comment %} <a href="https://firebase.google.com/" target="_blank" rel="noreferrer" onmouseover="this.title=this.firstElementChild.alt"> <img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="firebase" width="60" height="60"/> </a>  {% endcomment %}
+                </div>
+
+                <br>
+
+                <div style="display:flex; flex-direction:row; justify-content:center; align-items:center; gap:30px; width:100%">
+                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer" onmouseover="this.title=this.firstElementChild.alt" onmouseout="this.title=''"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="JavaScript" width="60" height="60"/> </a>   
+                <a href="https://nodejs.org" target="_blank" rel="noreferrer" onmouseover="this.title=this.firstElementChild.alt"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="60" height="60"/> </a> 
+                <a href="https://angularjs.org" target="_blank" rel="noreferrer" onmouseover="this.title=this.firstElementChild.alt"> <img src="https://www.vectorlogo.zone/logos/angular/angular-icon.svg" alt="angularjs" width="60" height="60"/> </a> 
+                <a href="https://www.chartjs.org" target="_blank" rel="noreferrer" onmouseover="this.title=this.firstElementChild.alt"> <img src="https://www.chartjs.org/media/logo-title.svg" alt="chartjs" width="70" height="70"/> </a> 
+                </div>
+
+                <br>  
+
+                <div style="display:flex; flex-direction:row; justify-content:center; align-items:center; gap:30px; width:100%">
+                <a href="https://www.python.org" target="_blank" rel="noreferrer" onmouseover="this.title=this.firstElementChild.alt" onmouseout="this.title=''"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="Python" width="60" height="60"/> </a> 
+                <a href="https://www.djangoproject.com/" target="_blank" rel="noreferrer" onmouseover="this.title=this.firstElementChild.alt"> <img src="https://cdn.worldvectorlogo.com/logos/django.svg" alt="django" width="50" height="50"/> </a> 
+                <a href="https://numpy.org/" target="_blank" rel="noreferrer" onmouseover="this.title=this.firstElementChild.alt"> <img src="https://www.vectorlogo.zone/logos/numpy/numpy-icon.svg" alt="numpy" width="50" height="50"/> </a> 
+                <a href="https://pandas.pydata.org/" target="_blank" rel="noreferrer" onmouseover="this.title=this.firstElementChild.alt"> <img src="https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/pandas/pandas-original.svg" alt="pandas" width="60" height="60"/> </a> 
+                {% comment %} <a href="https://www.mathworks.com/" target="_blank" rel="noreferrer" onmouseover="this.title=this.firstElementChild.alt"> <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png" alt="matlab" width="60" height="60"/> </a>  {% endcomment %}
+                </div>
+
+                <br>
+
+                <div style="display:flex; flex-direction:row; justify-content:center; align-items:center; gap:30px; width:100%">
+                <a href="https://www.docker.com/" target="_blank" rel="noreferrer" onmouseover="this.title=this.firstElementChild.alt"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="60" height="60"/> </a> 
+                <a href="https://hadoop.apache.org/" target="_blank" rel="noreferrer" onmouseover="this.title=this.firstElementChild.alt"> <img src="https://www.vectorlogo.zone/logos/apache_hadoop/apache_hadoop-icon.svg" alt="hadoop" width="60" height="60"/> </a> 
+                <a href="https://hive.apache.org/" target="_blank" rel="noreferrer" onmouseover="this.title=this.firstElementChild.alt"> <img src="https://www.vectorlogo.zone/logos/apache_hive/apache_hive-icon.svg" alt="hive" width="60" height="60"/> </a> 
+                <a href="https://aws.amazon.com" target="_blank" rel="noreferrer" onmouseover="this.title=this.firstElementChild.alt"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="aws" width="60" height="60"/> </a> 
+                <a href="https://www.tensorflow.org" target="_blank" rel="noreferrer" onmouseover="this.title=this.firstElementChild.alt"> <img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg" alt="tensorflow" width="60" height="60"/> </a> </p>
+                </div>
+
+                <br>
+
+                <div style="display:flex; flex-direction:row; justify-content:center; align-items:center; gap:30px; width:100%">
+                </div>
+
+                <br>  
+                
+                <h2 style="font-size:120%; color:black; font-style:italic" class="mb-4">Estas son algunas de las tecnologías y herramientas que estoy usando.</h2>
+
+              </div>
         </section>
-        {% comment %} <!-- Map-->
-        <div class="map" id="contact">
-            <iframe src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
-            <br />
-            <small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a></small>
-        </div> {% endcomment %}
-        <!-- Footer-->
-        <footer class="footer text-center">
-            <div class="container px-4 px-lg-5">
+
+<!-- Footer e iconos de contactos de redes -->
+        <footer class="footer text-center" id="contacto">
+          <h2 style="font-size:120%; color:black; font-style:italic" class="mb-4">Contacto</h2>
+          <p align="center">Si tienes alguna duda contactarme a traves de mi mail <a href="mailto:mauricioromero410@gmail.com"><em><strong>mauricioromero410@gmail.com</strong></em></a> o atraves de mis redes.</a></p>
+          <br>
+          <div class="container px-4 px-lg-5">
                 <ul class="list-inline mb-5">
-
-
-                    {% comment %} <!-- icono Discord -->
-                    <li class="list-inline-item">
-                        <section class="flex justify-center items-center">
-                            <button
-                            onclick="window.open('https://www.instagram.com/mauricio.rzoppi/', '_blank')"
-                            class="group flex justify-center p-2 rounded-md drop-shadow-xl bg-[#7289da] from-gray-800 text-white font-semibold hover:rounded-[50%] transition-all duration-500 hover:from-[#331029] hover:to-[#310413]"
-                            >
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="1em"
-                                height="1em"
-                                viewBox="0 0 640 512"
-                                stroke-width="0"
-                                fill="currentColor"
-                                stroke="currentColor"
-                                class="w-5 h-5"
-                              >
-                                <path
-                                  d="M524.531,69.836a1.5,1.5,0,0,0-.764-.7A485.065,485.065,0,0,0,404.081,32.03a1.816,1.816,0,0,0-1.923.91,337.461,337.461,0,0,0-14.9,30.6,447.848,447.848,0,0,0-134.426,0,309.541,309.541,0,0,0-15.135-30.6,1.89,1.89,0,0,0-1.924-.91A483.689,483.689,0,0,0,116.085,69.137a1.712,1.712,0,0,0-.788.676C39.068,183.651,18.186,294.69,28.43,404.354a2.016,2.016,0,0,0,.765,1.375A487.666,487.666,0,0,0,176.02,479.918a1.9,1.9,0,0,0,2.063-.676A348.2,348.2,0,0,0,208.12,430.4a1.86,1.86,0,0,0-1.019-2.588,321.173,321.173,0,0,1-45.868-21.853,1.885,1.885,0,0,1-.185-3.126c3.082-2.309,6.166-4.711,9.109-7.137a1.819,1.819,0,0,1,1.9-.256c96.229,43.917,200.41,43.917,295.5,0a1.812,1.812,0,0,1,1.924.233c2.944,2.426,6.027,4.851,9.132,7.16a1.884,1.884,0,0,1-.162,3.126,301.407,301.407,0,0,1-45.89,21.83,1.875,1.875,0,0,0-1,2.611,391.055,391.055,0,0,0,30.014,48.815,1.864,1.864,0,0,0,2.063.7A486.048,486.048,0,0,0,610.7,405.729a1.882,1.882,0,0,0,.765-1.352C623.729,277.594,590.933,167.465,524.531,69.836ZM222.491,337.58c-28.972,0-52.844-26.587-52.844-59.239S193.056,219.1,222.491,219.1c29.665,0,53.306,26.82,52.843,59.239C275.334,310.993,251.924,337.58,222.491,337.58Zm195.38,0c-28.971,0-52.843-26.587-52.843-59.239S388.437,219.1,417.871,219.1c29.667,0,53.307,26.82,52.844,59.239C470.715,310.993,447.538,337.58,417.871,337.58Z"
-                                ></path>
-                              </svg>
-                              <span
-                                class="absolute opacity-0 group-hover:opacity-100 group-hover:text-gray-700 group-hover:text-sm group-hover:-translate-y-10 duration-700"
-                              >
-                                Discord
-                              </span>
-                            </button>
-                          </section>                          
-                    </li> {% endcomment %}
 
                     <!-- icono Instagram -->
                     <li class="list-inline-item">
@@ -343,10 +374,13 @@
             </div>
             {% tailwind_css %}
         </footer>
+
         <!-- Scroll to Top Button-->
         <a class="scroll-to-top rounded" href="#page-top"><i class="fas fa-angle-up"></i></a>
+
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
         <!-- Core theme JS-->
         <script src="{% static 'js/scripts.js' %}"></script>
     </body>
