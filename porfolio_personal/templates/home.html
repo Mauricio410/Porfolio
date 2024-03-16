@@ -9,7 +9,7 @@
         <meta name="author" content="" />
         <title>Porfolio - Mauricio Romero</title>
         <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="{% static 'assets/favicon.ico' %}" />
+        <link rel="icon" type="image/x-icon" href="{% static 'assets/portafolio.png' %}" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
         <!-- Simple line icons-->
@@ -34,6 +34,7 @@
                 <li class="sidebar-nav-item"><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
+
 <!-- Inicio-->
         <header class="masthead d-flex align-items-center" style="background-image: url('{% static '\assets\img\fondo5.jpg' %}');">
             <div class="container px-4 px-lg-5 text-center">
@@ -53,6 +54,7 @@
               </a>
             </div>
         </header>
+
 <!-- Sobre Mi-->
         <section class="content-section bg-light" id="about" style="background-image: url('{% static '\assets\img\fondo6.jpg' %}');">
             <div class="container px-4 px-lg-5 text-center">
@@ -131,48 +133,44 @@
                     <h2 class="mb-5">Algunos de mis proyectos!</h2>
                 </div>
                 <div class="row gx-0">
-                    <div class="col-lg-6">
-                        <a class="portfolio-item" href="#!">
+                  <div class="col-lg-6" style="margin-bottom:10px">
+                    <a class="portfolio-item" target="_blank" href="https://github.com/Mauricio410/Calculadora-Avanzada" style="width:700px;height:467px;">
                             <div class="caption">
                                 <div class="caption-content">
-                                    <div class="h2">Stationary</div>
-                                    <p class="mb-0">A yellow pencil with envelopes on a clean, blue backdrop!</p>
+                                  <div class="h2" style="font-size: 1.5rem; color:white; -webkit-text-stroke-width: 1.5px; -webkit-text-stroke-color: black;">Calculadora</div>
                                 </div>
                             </div>
-                            <img class="img-fluid" src="{% static 'assets/img/portfolio-1.jpg' %}" alt="..." />
+                            <img class="img-fluid" src="{% static 'assets/img/calculadora.jpg' %}" alt="..." />
                         </a>
                     </div>
-                    <div class="col-lg-6">
-                        <a class="portfolio-item" href="#!">
+                    <div class="col-lg-6" style="margin-bottom:10px">
+                      <a class="portfolio-item" target="_blank" href="https://github.com/Mauricio410/Calculadora-Impuestos" style="width:700px;height:467px;">
                             <div class="caption">
                                 <div class="caption-content">
-                                    <div class="h2">Ice Cream</div>
-                                    <p class="mb-0">A dark blue background with a colored pencil, a clip, and a tiny ice cream cone!</p>
+                                  <div class="h2" style="font-size: 1.5rem; color:white; -webkit-text-stroke-width: 1.5px; -webkit-text-stroke-color: black;">Calculadora de Impuestos</div>
                                 </div>
                             </div>
-                            <img class="img-fluid" src="{% static 'assets/img/portfolio-2.jpg' %}" alt="..." />
+                            <img class="img-fluid" src="{% static 'assets/img/impuestos.jpg' %}" alt="..." style="width:700px;height:467px;"/>
                         </a>
                     </div>
-                    <div class="col-lg-6">
-                        <a class="portfolio-item" href="#!">
+                    <div class="col-lg-6" style="margin-top:10px">
+                      <a class="portfolio-item" target="_blank" href="https://github.com/Mauricio410/Python-Juegos" style="width:700px;height:467px;">
                             <div class="caption">
                                 <div class="caption-content">
-                                    <div class="h2">Strawberries</div>
-                                    <p class="mb-0">Strawberries are such a tasty snack, especially with a little sugar on top!</p>
+                                    <div class="h2" style="font-size: 1.5rem; color:white; -webkit-text-stroke-width: 1.5px; -webkit-text-stroke-color: black;">Python Juegos</div>
                                 </div>
                             </div>
-                            <img class="img-fluid" src="{% static 'assets/img/portfolio-3.jpg' %}" alt="..." />
+                            <img class="img-fluid" src="{% static 'assets/img/juegos.jpg' %}" alt="..." style="width:700px;height:467px;" />
                         </a>
                     </div>
-                    <div class="col-lg-6">
-                        <a class="portfolio-item" href="#!">
+                    <div class="col-lg-6" style="margin-top:10px">
+                        <a class="portfolio-item" target="_blank" href="https://github.com/Mauricio410/Generador_Password" style="width:700px;height:467px;">
                             <div class="caption">
                                 <div class="caption-content">
-                                    <div class="h2">Workspace</div>
-                                    <p class="mb-0">A yellow workspace with some scissors, pencils, and other objects.</p>
+                                  <div class="h2" style="font-size: 1.5rem; color:white; -webkit-text-stroke-width: 1.5px; -webkit-text-stroke-color: black;">Generador de Contraseñas</div>
                                 </div>
                             </div>
-                            <img class="img-fluid" src="{% static 'assets/img/portfolio-4.jpg' %}" alt="..." />
+                            <img class="img-fluid" src="{% static 'assets/img/contraseñas.jpg' %}" alt="..." />
                         </a>
                     </div>
                 </div>
@@ -241,7 +239,7 @@
 
                 <br>  
                 
-                <h2 style="font-size:120%; color:black; font-style:italic" class="mb-4">Estas son algunos de los lenguajes, tecnologías y herramientas que me encuentro utilizando y aprendiendo.</h2>
+                <h2 style="font-size:120%; color:white; font-style:italic" class="mb-4">Estas son algunos de los lenguajes, tecnologías y herramientas que me encuentro utilizando y aprendiendo.</h2>
 
               </div>
         </section>
@@ -249,7 +247,7 @@
 <!-- Footer e iconos de contactos de redes -->
         <footer class="footer text-center" id="contacto" style="background-image: url('{% static '\assets\img\fondo4.jpg' %}');">
           <h2 style="font-size:250%; color:black; font-style:italic" class="mb-4">Contacto</h2>
-          <p align="center" style="font-size:120%; color:black; font-style:italic">Si tienes alguna duda podes contactarme a traves de mi mail <a href="mailto:mauricioromero410@gmail.com"><em><strong>mauricioromero410@gmail.com</strong></em></a> o por mis redes.</a></p>
+          <p align="center" style="font-size:120%; color:black; font-style:italic">Puedes contactarme a traves de mi mail "<a href="mailto:mauricioromero410@gmail.com"><em><strong>mauricioromero410@gmail.com</strong></em></a>" o por mis redes.</a></p>
           <br>
           <div class="container px-4 px-lg-5">
                 <ul class="list-inline mb-5">
