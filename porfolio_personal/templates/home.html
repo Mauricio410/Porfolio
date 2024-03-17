@@ -132,47 +132,61 @@
                     <h2 class="text-primary mb-0">Mi Porfolio</h2>
                     <h2 class="mb-5">Algunos de mis proyectos!</h2>
                 </div>
-                <div class="row gx-0">
-                  <div class="col-lg-6" style="margin-bottom:10px">
-                    <a class="portfolio-item" target="_blank" href="https://github.com/Mauricio410/Calculadora-Avanzada" style="width:700px;height:467px;">
-                            <div class="caption">
-                                <div class="caption-content">
-                                  <div class="h2" style="font-size: 1.5rem; color:white; -webkit-text-stroke-width: 1.5px; -webkit-text-stroke-color: black;">Calculadora</div>
-                                </div>
-                            </div>
-                            <img class="img-fluid" src="{% static 'assets/img/calculadora.jpg' %}" alt="..." />
-                        </a>
-                    </div>
-                    <div class="col-lg-6" style="margin-bottom:10px">
-                      <a class="portfolio-item" target="_blank" href="https://github.com/Mauricio410/Calculadora-Impuestos" style="width:700px;height:467px;">
-                            <div class="caption">
-                                <div class="caption-content">
-                                  <div class="h2" style="font-size: 1.5rem; color:white; -webkit-text-stroke-width: 1.5px; -webkit-text-stroke-color: black;">Calculadora de Impuestos</div>
-                                </div>
-                            </div>
-                            <img class="img-fluid" src="{% static 'assets/img/impuestos.jpg' %}" alt="..." style="width:700px;height:467px;"/>
-                        </a>
-                    </div>
-                    <div class="col-lg-6" style="margin-top:10px">
-                      <a class="portfolio-item" target="_blank" href="https://github.com/Mauricio410/Python-Juegos" style="width:700px;height:467px;">
-                            <div class="caption">
-                                <div class="caption-content">
-                                    <div class="h2" style="font-size: 1.5rem; color:white; -webkit-text-stroke-width: 1.5px; -webkit-text-stroke-color: black;">Python Juegos</div>
-                                </div>
-                            </div>
-                            <img class="img-fluid" src="{% static 'assets/img/juegos.jpg' %}" alt="..." style="width:700px;height:467px;" />
-                        </a>
-                    </div>
-                    <div class="col-lg-6" style="margin-top:10px">
-                        <a class="portfolio-item" target="_blank" href="https://github.com/Mauricio410/Generador_Password" style="width:700px;height:467px;">
-                            <div class="caption">
-                                <div class="caption-content">
-                                  <div class="h2" style="font-size: 1.5rem; color:white; -webkit-text-stroke-width: 1.5px; -webkit-text-stroke-color: black;">Generador de Contraseñas</div>
-                                </div>
-                            </div>
-                            <img class="img-fluid" src="{% static 'assets/img/contraseñas.jpg' %}" alt="..." />
-                        </a>
-                    </div>
+                <div class="row gx-0" style="margin-top:10px; margin-bottom:10px">
+
+                        <div class="card ms-auto me-auto" style="max-width: 20rem; display: inline-block; margin:10px;" onclick="window.open('https://github.com/Mauricio410/Calculadora-Avanzada', '_blank')">
+                          <div class="card-image" style="background-image:url('{% static 'assets/img/calculadora.jpg' %}'); background-size:cover; background-repeat:no-repeat; background-position:center;"></div>
+                              <div class="heading"> Calculadora
+                                <div class="author"> By <span class="name">Abi</span> 4 days ago</div>
+                        </div>
+                      </div>
+
+                        
+                        <div class="card ms-auto me-auto" style="max-width: 20rem; display: inline-block; margin:10px;" onclick="window.open('https://github.com/Mauricio410/Python-Juegos', '_blank')">
+                          <div class="card-image" style="background-image:url('{% static 'assets/img/juegos.jpg' %}'); background-size:cover; background-repeat:no-repeat; background-position:center;"></div>
+                              <div class="heading"> Python Juegos
+                                <div class="author"> By <span class="name">Abi</span> 4 days ago</div>
+                        </div>
+                      </div>
+
+                        <div class="card ms-auto me-auto" style="max-width: 20rem; display: inline-block; margin:10px;" onclick="window.open('https://github.com/Mauricio410/Conoce_tu_Horoscopo_Chino', '_blank')">
+                          <div class="card-image" style="background-image:url('{% static 'assets/img/horoscopo-chino.png' %}'); background-size:cover; background-repeat:no-repeat; background-position:center;"></div>
+                              <div class="heading"> Horoscopo Chino
+                                <div class="author"> By <span class="name">Abi</span> 1 week ago</div>
+                        </div>
+                      </div>
+
+                        <div class="card ms-auto me-auto" style="max-width: 20rem; display: inline-block; margin:10px;" onclick="window.open('https://github.com/Mauricio410/Calculadora-Impuestos', '_blank')">
+                          <div class="card-image" style="background-image:url('{% static 'assets/img/impuestos.jpg' %}'); background-size:cover; background-repeat:no-repeat; background-position:center;"></div>
+                              <div class="heading"> Calculadora de Impuestos
+                                <div class="author"> By <span class="name">Abi</span> 1 week ago</div>
+                        </div>
+                      </div>
+
+                        <div class="card ms-auto me-auto" style="max-width: 20rem; display: inline-block; margin:10px;" onclick="window.open('https://github.com/Mauricio410/Generador_Password', '_blank')">
+                          <div class="card-image" style="background-image:url('{% static 'assets/img/contraseñas.jpg' %}'); background-size:cover; background-repeat:no-repeat; background-position:center;"></div>
+                              <div class="heading"> Generador de Contraseñas
+                                <div class="author"> By <span class="name">Abi</span> 1 week ago</div>
+                        </div>
+                      </div>
+
+                  </div>
+
+                  <div class="container px-4 px-lg-5 text-center" style="margin-top: 50px;">
+                    <a style="--clr: #7808d0" class="button" href="https://github.com/mauricio410" target="_blank">
+                      <span class="button__icon-wrapper">
+                          <svg width="10" class="button__icon-svg" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 15">
+                              <path fill="currentColor" d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"></path>
+                          </svg>
+                          <svg class="button__icon-svg  button__icon-svg--copy" xmlns="http://www.w3.org/2000/svg" width="10" fill="none" viewBox="0 0 14 15">
+                              <path fill="currentColor" d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"></path>
+                          </svg>
+                      </span>
+                      Mas Proyectos
+                    </a>                  
+
+                  </div>
+
                 </div>
             </div>
         </section>
